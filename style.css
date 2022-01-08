@@ -3,10 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* NavBar Styling */
 section.navbar {
   display: flex;
   gap: 20px;
-  /* padding: 12px; */
   height: 100px;
   overflow-y: hidden;
   background-color: rgb(242, 239, 235);
@@ -15,8 +15,6 @@ section.navbar {
 div.logo img {
   width: 150px;
   height: 150px;
-
-  /* border-radius: 12px; */
 }
 ul.list {
   display: flex;
@@ -30,6 +28,24 @@ ul.list li a {
   text-decoration: none;
   margin: 2px 20px;
   font-family: "Baloo Bhai 2", cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Search box */
+#searchBox {
+  background-color: rgb(255, 255, 255);
+  border-radius: 21px;
+  padding: 12px;
+  font-size: 20px;
+  height: 46px;
+  width: 250px;
+}
+#searchButton {
+  width: 150px;
+  border-radius: 20px;
+  margin-left: 9px;
+  height: 46px;
+  background-color: limegreen;
   font-size: 20px;
   font-weight: bold;
 }
