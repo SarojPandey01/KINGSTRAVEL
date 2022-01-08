@@ -22,14 +22,65 @@
         <ul class="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">Destinations</a></li>
+          <li><a href="about.html">Vlogs</a></li>
           <li><a href="booking.html">Booking</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-        <div class="searchBox"><label for="searchBox">
-        <input type="text" id="searchBox" /><button id="searchButton">Search</button>
-        </div>
+
+      <div class="searchBox">
+        <label for="searchBox"> <input type="text" id="searchBox" /></label
+        ><button id="searchButton">Search</button>
+      </div>
     </section>
+    <!-- For front page Image Slider -->
+    <section id="landing-page">
+      <span class="btn" onClick="IncreaseIndex()" id="b1">&rarr;</span>
+      <span class="btn" id="b2" onClick="DecreaseIndex()">&larr;</span>
+
+      <div class="imageslider">
+        <img id="imageslider" src="./images/mountains1.jpg" alt="" />
+      </div>
+      <!-- destination dropdown -->
+      <div class="mainDes">
+        <div class="destination">
+          <label for="country">Country</label>
+          <select class="selectMenu" name="country" id="country">
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="America">America</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Dubai">Dubai</option>
+          </select>
+          </label>
+          <label for="activity">Activities</label>
+          <select class="selectMenu" name="country" id="country">
+            <option value="Rafting">Rafting</option>
+            <option value="Sky Diving">Sky Diving</option>
+            <option value="Cultural Tour">Cultural Tour</option>
+            <option value="Hiking">Hiking</option>
+            <option value="Jungle Safari">Jungle Safari</option>
+            <option value="Sightseeing">Sightseeing</option>
+            <option value="Others">Others</option>
+          </select>
+          </label>
+          <label for="duration">Duration</label>
+          <select class="selectMenu" name="time" id="duration">
+            <option value="Rafting">1 day</option>
+            <option value="Sky Diving">2 days</option>
+            <option value="Cultural Tour">3 days</option>
+            <option value="Hiking">1 week</option>
+            <option value="Jungle Safari">2-3 weeks</option>
+            <option value="Sightseeing">1 month</option>
+          </select>
+          </label>
+          <a href="#"><button class='DestinationButton'>Submit</button></a>
+          
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
