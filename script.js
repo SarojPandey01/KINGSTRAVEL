@@ -1,4 +1,5 @@
-let index = 0;
+let index = 0;  
+// window.location.href = "http://www.w3schools.com";
 
 let img = document.getElementById("imageslider");
 let imgArray = [
