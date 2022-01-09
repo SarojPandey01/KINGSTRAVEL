@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   --mainfont: "Baloo Bhai 2", cursive;
-
 }
 body {
   overflow-x: hidden;
 }
-.btn-hover:hover{
-  transition:all 150ms linear;
+.btn-hover:hover {
+  transition: all 150ms linear;
   background-color: white !important;
   cursor: pointer;
 }
@@ -52,7 +51,7 @@ ul.list li a {
   font-weight: bold;
 }
 /* navbar items style on hover state */
-ul.list li:hover{
+ul.list li:hover {
   background-color: grey;
 }
 
@@ -138,13 +137,13 @@ span.btn {
   /* text-decoration:underline; */
 }
 select.selectMenu {
-  margin-left:-90px ;
+  margin-left: -90px;
   width: 250px;
   height: 50px;
   border-radius: 40px;
   padding: 0 10px;
   font-size: 1.3rem;
-  background-color:rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 button.DestinationButton {
   width: 150px;
@@ -154,13 +153,12 @@ button.DestinationButton {
   margin-left: 40px;
   margin-bottom: 18px;
   background: rgb(0, 255, 0);
-font-weight: 600;  /* outline: 0; */
+  font-weight: 600; /* outline: 0; */
   font-weight: bold;
   font-size: larger;
-
 }
 /* Page slogan  */
-div.pageintro{
+div.pageintro {
   color: aliceblue;
   height: auto;
   width: 55rem;
@@ -172,133 +170,183 @@ div.pageintro{
 
   justify-content: center;
   align-items: center;
-
 }
-.pageintro>.heading h1{
-  font-family: 'Monoton', cursive;
-    font-size: 4.5em;
+.pageintro > .heading h1 {
+  font-family: "Monoton", cursive;
+  font-size: 4.5em;
   height: 90px;
-  text-transform:uppercase;
-  color:rgb(255, 0, 0);
+  text-transform: uppercase;
+  color: rgb(255, 0, 0);
   animation: change 25s infinite;
   letter-spacing: 2px;
   word-spacing: 4px;
-
 }
-@keyframes change{
-  from{
+@keyframes change {
+  from {
     filter: hue-rotate(0);
   }
-  to{
-    filter:hue-rotate(360deg)
+  to {
+    filter: hue-rotate(360deg);
   }
 }
-.pageintro span{
+.pageintro span {
   font-size: 1.4rem;
   font-weight: bold;
-  font-family: 'Red Hat Mono', monospace;
-  color:red;
+  font-family: "Red Hat Mono", monospace;
+  color: red;
   animation: change 25s infinite;
-
 }
 /* adventure places recommendations */
-#tourSitesAdventure{
-  padding:10px 50px;
-  display:flex;
+#tourSitesAdventure {
+  justify-content: center;
+  padding: 10px 0;
+  display: flex;
   flex-wrap: wrap;
-  gap:3em;
+  gap: 3em;
 }
-h1.heading{
+h1.heading {
   font-family: var(--mainfont);
   margin: 30px 0;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  }
-.visitPlaces{
-background-image: url(./images/bgpattern.png);
-background-size:cover;
-background-position:center left;
-background-repeat: no-repeat;
-  width:350px;
+}
+/* General homepage tourist site styling */
+.visitPlaces {
+  background-image: url(./images/bgpattern.png);
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border:1px solid grey;
+  border: 1px solid grey;
   text-align: center;
-border-radius: 23px;
-overflow:hidden;
-padding:12px;
-box-shadow:10px 10px 15px 0 grey;
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 12px;
+  box-shadow: 10px 10px 15px 0 grey;
 }
-.visitPlaces .img{
+.visitPlaces .img {
   width: 100%;
   height: 200px;
-  border-radius:inherit;
+  border-radius: inherit;
 }
-.visitPlaces img{
+.visitPlaces img {
   width: 100%;
   height: 200px;
-  border-radius:inherit;
-  transition:transform 1s ease-in-out;
+  border-radius: inherit;
+  transition: transform 1s ease-in-out;
 }
-.imgbox{
+.imgbox {
   overflow: hidden;
   border-radius: inherit;
 }
-.visitPlaces:hover img{
+.visitPlaces:hover img {
   transform: scale(2);
   transform-origin: center;
 }
-img#topscale{
-  transform-origin: top;
+img.topscale {
+  transform-origin: top !important;
 }
-img#leftscale{
-  transform-origin: left;
+img.leftscale {
+  transform-origin: left !important;
 }
-.visitPlaces h2{
+img.rightscale {
+  transform-origin: right !important;
+}
+img.leftscale {
+  transform-origin: left !important;
+}
+.visitPlaces h2 {
   font-family: var(--mainfont);
 }
-.visitPlaces h2:hover{
-text-decoration: underline;}
-.visitPlaces p{
-  opacity: .9;
-  color:black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.visitPlaces h2:hover {
+  text-decoration: underline;
+}
+.visitPlaces p {
+  opacity: 0.9;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 10px;
 }
-.visitPlaces a{
+.visitPlaces a {
   text-decoration: none;
-
-
 }
-.visitPlaces span{
-   display:inline-block;
-  color:black;
-  background:rgb(204, 255, 19);
-  border:1px solid black;
-  border-radius:21px; 
-  width:110px;
+.visitPlaces span {
+  display: inline-block;
+  color: black;
+  background: rgb(204, 255, 19);
+  border: 1px solid black;
+  border-radius: 21px;
+  width: 110px;
   height: 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
   margin-bottom: 5px;
   margin-right: 12px;
-  padding:10px;
-  transition:190ms;
- }
- .visitPlaces span:hover{
-background-color: rgb(15, 14, 14);
-color: white;
+  padding: 10px;
+  transition: 190ms;
+}
+.visitPlaces span:hover {
+  background-color: rgb(15, 14, 14);
+  color: white;
+}
 
-
- }
-
- /* Cultural sites presentstions */
- #tourSitesCulture{
-  padding:10px 50px;
-  display:flex;
+/* Cultural sites styling */
+#tourSitesCulture,
+#touristSiteInternational,
+#tourSiteHoliday,
+#toursitesluxury {
+  justify-content: center;
+  padding: 10px 50px;
+  display: flex;
   flex-wrap: wrap;
-  gap:3em;
+  gap: 3em;
+}
+/* For different background dor different sections */
+#tourSitesCulture > div {
+  background-image: url(./images/gradientbg1.jpg);
+}
+#touristSiteInternational > div {
+  background-image: url(./images/gradientbg2.jpg);
+}
+#tourSiteHoliday > div {
+  background-image: url(./images/gradientbg3.jpg);
+}
+/* Footer styling */
+footer {
+  margin-top: 2.8rem;
+}
+
+.copyright p {
+  font-size: 1.4rem;
+  font-family: roboto;
+  text-align: center;
+}
+.contactFooter {
+  height: 200px;
+  width: 100%;
+  margin-top: -12px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(0, 34, 76);
+}
+.contactFooter div u {
+  color: white;
+}
+.contactFooter div {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: var(--mainfont);
+  color: rgb(238, 229, 229);
+}
+i {
+  margin: 3px;
+}
+i:hover,
+.contactFooter div:hover {
+  color: yellow;
 }
