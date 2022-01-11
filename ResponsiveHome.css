@@ -27,6 +27,9 @@
     height: 400px;
     justify-content: space-around;
   }
+  .nav-bar ul li:nth-child(5) a {
+    margin: 0 3px !important;
+  }
   /* logo fixing */
   div.logo img {
     height: 100px;
@@ -52,6 +55,7 @@
     margin-left: 100px;
   }
 }
+/* SUBMIT BUTTON */
 @media (max-width: 1139px) {
   button.DestinationButton {
     width: 350px;
@@ -62,6 +66,7 @@
     margin-left: 100px;
   }
 }
+/* DESTINATION MENU CENTERING */
 @media screen and (max-width: 900px) {
   .destination {
     display: flex;
@@ -77,6 +82,7 @@
     width: 336px;
   }
 }
+/* PAGE SLOGAN FIXING */
 @media screen and (max-width: 700px) {
   .pageintro > .heading h1 {
     font-size: 3.5em;
@@ -93,6 +99,7 @@
     width: 150px;
   }
 }
+/* FOOTER FIXING */
 @media screen and (max-width: 800px) {
   .contactFooter {
     flex-direction: column;
@@ -101,6 +108,37 @@
   }
   .contactFooter div {
     margin: 12px 0;
-    /* background-color: black; */
   }
 }
+/* SEARCH BAR FIXING FOR SMALLEST WIDTH PHONE */
+@media screen and (max-width: 360px) {
+  .searchBox {
+    right: 0;
+  }
+  input#searchBox {
+    width: 120px;
+    height: 40px;
+  }
+  #searchButton {
+    margin-left: 2px;
+    width: 40px;
+    height: 40px;
+  }
+  div.logo {
+    left: 32px;
+  }
+  div.hamburgerButton {
+    left: 2px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #tourSitesCulture,
+  #touristSiteInternational,
+  #tourSiteHoliday,
+  #toursitesluxury {
+    padding: 10px 2px;
+  }
+}
+/* @media screen and (max-width: 350px) {
+
+} */

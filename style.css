@@ -173,7 +173,8 @@ span.btn {
   top: -45px;
   left: 106px;
   font-size: 2rem;
-  color: rgb(0, 255, 34);
+  color: rgb(187, 255, 0);
+  text-shadow: 2px 2px 0px rgb(255, 0, 0), -2px -2px 0 rgb(255, 0, 0);
   font-family: var(--mainfont);
   font-weight: 900;
   letter-spacing: 1px;
@@ -359,7 +360,7 @@ img.leftscale {
   background-image: url(./images/gradientbg1.jpg);
 }
 #touristSiteInternational > div {
-  background-image: url(./images/gradientbg2.jpg);
+  background-image: linear-gradient(180deg, rgb(255, 6, 6), rgb(78, 89, 189));
 }
 #tourSiteHoliday > div {
   background-image: url(./images/gradientbg3.jpg);
@@ -397,7 +398,7 @@ footer {
 i {
   margin: 3px;
 }
-footer i:hover,
-.contactFooter div:hover {
+footer i,
+.contactFooter div {
   color: yellow;
 }
