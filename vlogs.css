@@ -8,7 +8,6 @@ h1.Vlogheading {
 }
 section#vlogs {
   height: auto;
-  /* background-color: blueviolet; */
   display: flex;
   flex-direction: column;
   padding: 16px 42px;
@@ -58,5 +57,6 @@ section#vlogs .vlogArticle .videodesc p {
 @media (max-width: 600px) {
   section#vlogs {
     padding: 12px 3px;
+    /* htrygfw */
   }
 }
