@@ -38,6 +38,7 @@ function checkValidation() {
   }
   if (text == "") {
     alert("Please Type the description");
+  } else {
   }
 }
 // console.log(document.forms["myForm"]["name"]);
