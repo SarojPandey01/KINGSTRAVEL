@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./ResponsiveHome.css" />
+    <link rel="stylesheet" href="./booking.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -55,7 +56,78 @@
       <span class="line" id="line1"></span><span class="line" id="line2"></span
       ><span class="line" id="line3"></span>
     </div>
+    <h1 class="heading">BOOKING FORM</h1>
+    <p class="desc">Please Fill the form below</p>
+    <!-- BOOKING FORM START -->
+    <section id="form">
+      <div class="forml">
+        <!-- <form action="#" name="myForm" id="myForm"> -->
+        Name:<input
+          class="value"
+          type="text"
+          id="asdf"
+          placeholder="Enter Your Name"
+        />
+        Phone No.<input id="phone" class="value" type="number" />
+        Address:
+        <input class="value" type="text" name="address" id="address" /> E-mail:
+        <input class="value" type="email" name="email" id="email" />
+        Destination:
+        <select id="country" name="country">
+          <option value="Nepal">Nepal</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="Bhutan">Bhutan</option>
+          <option value="America">America</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Dubai">Dubai</option>
+        </select>
+        Date: <input class="value" type="date" name="date" id="date" />
+        Time :
+        <input class="value" id="time" type="datetime-local" />
+        Package:
+        <select name="package" id="package">
+          <option value="">Basic</option>
+          <option value="">Medium</option>
+          <option value="">Luxury</option>
+        </select>
+        Transportation Medium:
+        <select name="transport" id="transport">
+          <option value="">Land</option>
+          <option value="">Water</option>
+          <option value="">Air</option>
+        </select>
+        Duration:
+        <select id="duration" name="duration">
+          <option value="Rafting">1 day</option>
+          <option value="Sky Diving">2 days</option>
+          <option value="Cultural Tour">3 days</option>
+          <option value="Hiking">1 week</option>
+          <option value="Jungle Safari">2-3 weeks</option>
+          <option value="Sightseeing">1 month</option>
+        </select>
 
+        Travel Aim:
+        <select name="travelaim" id="travelaim">
+          <option value="Rafting">Rafting</option>
+          <option value="Sky Diving">Sky Diving</option>
+          <option value="Cultural Tour">Cultural Tour</option>
+          <option value="Hiking">Hiking</option>
+          <option value="Jungle Safari">Jungle Safari</option>
+          <option value="Sightseeing">Sightseeing</option>
+          <option value="Others">Others</option>
+        </select>
+        No. of people :
+        <input class="value" type="number" name="nop" id="nop" />
+        Explain Your Plan in Brief:
+        <textarea rows="10" cols="20" id="text" name="text"></textarea>
+        <button onclick="checkValidation()" type="reset" class="bt">
+          Submit
+        </button>
+        <!-- </form> -->
+      </div>
+      <!-- BOOKING FORM END -->
+    </section>
     <!-- FOOTER STARTS -->
 
     <footer>
@@ -85,5 +157,6 @@
       src="https://kit.fontawesome.com/3d2f093b4a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./form.js"></script>
   </body>
 </html>
