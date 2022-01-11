@@ -55,22 +55,8 @@ section#vlogs .vlogArticle .videodesc p {
   font-family: sans-serif;
   text-align: center;
 }
-
-/*
-<div class="video">
-          ########IFRAME here############
-        </div>
-        <div class="videodesc">
-          <h2 class="videohead">Lorem, ipsum dolor.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-            quidem, minima quaerat temporibus quas accusantium maiores iste
-            tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perferendis repellendus, nesciunt excepturi, perspiciatis numquam
-            consequatur quibusdam ipsam quis eaque itaque sequi reiciendis
-            quisquam odio veritatis dignissimos? Sint.
-          </p>
-        </div>
-        <hr color="red" />
-
-*/
+@media (max-width: 600px) {
+  section#vlogs {
+    padding: 12px 3px;
+  }
+}
