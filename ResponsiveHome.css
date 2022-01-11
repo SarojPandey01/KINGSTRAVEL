@@ -93,3 +93,14 @@
     width: 150px;
   }
 }
+@media screen and (max-width: 800px) {
+  .contactFooter {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .contactFooter div {
+    margin: 12px 0;
+    /* background-color: black; */
+  }
+}

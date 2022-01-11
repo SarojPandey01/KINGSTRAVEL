@@ -367,6 +367,7 @@ img.leftscale {
 /* Footer styling */
 footer {
   margin-top: 2.8rem;
+  overflow-x: hidden;
 }
 
 .copyright {
