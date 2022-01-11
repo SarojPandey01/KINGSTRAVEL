@@ -19,6 +19,7 @@ section#vlogs .vlogArticle {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
+  margin: 12px 0;
 }
 section#vlogs .vlogArticle .video {
   position: relative;
