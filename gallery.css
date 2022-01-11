@@ -1,7 +1,9 @@
-.gallery01 {
-  background-color: rgb(217, 255, 0);
+ul.list li#g1 {
+  background-color: rgb(1, 155, 14);
+  /* border: 2px solid magenta; */
 }
-/* Image gallery styling */
+/* Image gallery styling       */
+
 h1.heading {
   margin-top: 120px;
 }

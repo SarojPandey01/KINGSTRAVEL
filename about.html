@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KINGS TRAVEL | Royal Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./ResponsiveHome.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="navbar" id="navbar">
+      <div class="logo">
+        <a href="#landing-page"
+          ><img src="./images/KING_S_TRAVEL-removebg-preview.png" alt="logo"
+        /></a>
+      </div>
+      <div class="nav-bar" id="mobileList">
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="vlogs.html">Vlogs</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li
+            style="
+              position: relative;
+              left: 11px;
+              background-color: rgb(1, 155, 14);
+            "
+          >
+            <a href="about.html" style="margin: 0px">About Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="searchBox">
+        <label for="searchBox">
+          <input
+            placeholder="Search Here..."
+            type="text"
+            id="searchBox" /></label
+        ><button id="searchButton" class="btn-hover">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </section>
+    <!-- /For hamburger button -->
+    <div class="hamburgerButton" id="hb" onclick="toggleMenu()">
+      <span class="line" id="line1"></span><span class="line" id="line2"></span
+      ><span class="line" id="line3"></span>
+    </div>
+
+    <!-- FOOTER STARTS -->
+
+    <footer>
+      <div class="footer">
+        <img src="./images/footerimg.png" alt="" />
+      </div>
+      <div class="contactFooter">
+        <div><u>Call Us</u><br />+977-9849388764</div>
+        <div>
+          <u>Email for us</u><br />
+          kingstravel@gmail.com
+        </div>
+        <div>
+          <u>Follow us</u><br /><i class="fab fa-facebook"></i
+          ><i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i
+          ><i class="fab fa-twitter"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; All copyright reserved 2022.</p>
+      </div>
+    </footer>
+    <!--footer ends-->
+    <script src="./navbar.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/3d2f093b4a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

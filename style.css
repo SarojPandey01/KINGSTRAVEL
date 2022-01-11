@@ -89,9 +89,9 @@ div.hamburgerButton span.line {
 }
 /* navbar items style on hover state */
 ul.list li:hover {
-  background-color: grey;
+  background-color: rgb(76, 231, 37);
   transform: scale(1.1);
-  animation: change 2s infinite;
+  animation: change 1s infinite;
 }
 
 /* Search box */

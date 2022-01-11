@@ -1,0 +1,76 @@
+h1.Vlogheading {
+  font-family: var(--mainfont);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+section#vlogs {
+  height: auto;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  padding: 16px 42px;
+}
+section#vlogs .vlogArticle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+section#vlogs .vlogArticle .video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  aspect-ratio: 16/9;
+}
+
+section#vlogs .vlogArticle .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section#vlogs .vlogArticle .videodesc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: space-around;
+  justify-content: center;
+}
+
+section#vlogs .vlogArticle .videodesc .videohead {
+  font-family: var(--mainfont);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+section#vlogs .vlogArticle .videodesc p {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*
+<div class="video">
+          ########IFRAME here############
+        </div>
+        <div class="videodesc">
+          <h2 class="videohead">Lorem, ipsum dolor.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+            quidem, minima quaerat temporibus quas accusantium maiores iste
+            tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis repellendus, nesciunt excepturi, perspiciatis numquam
+            consequatur quibusdam ipsam quis eaque itaque sequi reiciendis
+            quisquam odio veritatis dignissimos? Sint.
+          </p>
+        </div>
+        <hr color="red" />
+
+*/
