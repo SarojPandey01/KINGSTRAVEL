@@ -1,4 +1,4 @@
-let index = 0;  
+let index = 0;
 // window.location.href = "http://www.w3schools.com";
 
 let img = document.getElementById("imageslider");
@@ -37,7 +37,7 @@ img.addEventListener("mouseover", showArrow);
 arrow1.addEventListener("mouseover", showArrow);
 arrow2.addEventListener("mouseover", showArrow);
 function showArrow() {
-  arrow1.style.right = "0";
+  arrow1.style.right = "18px";
   arrow2.style.left = "0";
 }
 //remove slider arrow
@@ -47,3 +47,15 @@ function hideArrow() {
 }
 
 img.addEventListener("mouseout", hideArrow);
+// FOR HAMBURGER BUTTON
+let hamButton = document.getElementById("hb");
+let mobMenu = document.getElementById("mobileList");
+var show = true;
+function toggleMenu() {
+  if (show) {
+    mobMenu.style.left = "0";
+  } else {
+    mobMenu.style.left = "-200px";
+  }
+  show = !show;
+}

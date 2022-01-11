@@ -14,15 +14,20 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./gallery.css" />
+    <link rel="stylesheet" href="ResponsiveHome.css" />
+    <script src="./gallery.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <section class="navbar" id="navbar">
-      <div class="logo"><img src="./images/KING'S TRAVEL.png" alt="" /></div>
-      <div class="nav-bar">
+      <div class="logo">
+        <a href="#landing-page"
+          ><a href="./index.html"><img src="./images/KING_S_TRAVEL-removebg-preview.png" alt="logo"/></a>
+      </div>
+      <div class="nav-bar" id="mobileList">
         <ul class="list">
           <li><a href="index.html">Home</a></li>
-          <li class="gallery01"><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="about.html">Vlogs</a></li>
           <li><a href="booking.html">Booking</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -30,18 +35,209 @@
       </div>
 
       <div class="searchBox">
-        <label for="searchBox"> <input type="text" id="searchBox" /></label
-        ><button id="searchButton">Search</button>
+        <label for="searchBox">
+          <input
+            placeholder="Search Here..."
+            type="text"
+            id="searchBox" /></label
+        ><button id="searchButton" class="btn-hover">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
     </section>
+    <!-- /For hamburger button -->
+    <div class="hamburgerButton" id="hb" onclick="toggleMenu()">
+      <span class="line" id="line1"></span><span class="line" id="line2"></span
+      ><span class="line" id="line3"></span>
+    </div>
+    <!--Image Gallery section  -->
+
+    <h1 class="heading">IMAGE GALLERY</h1>
+    <section class="imgGallery" id="imageGallery">
+      <!-- IMAGE ITEM START -->
       <div>
         <img src="./images/mountains1.jpg" alt="Canot show img" />
+        <div class="info">
+          MOUNT EVEREST<br /><span
+            >“The only thing you'll find on the summit is a divine view. The
+            things that really matter lie far below.”</span
+          >
+        </div>
+      </div>
+      <!-- IMAGE ITEM END-->
+      <div>
         <img src="./images/hiking.jpg" alt="Canot show img" />
-        <img src="./images/mount-fuji.jpg" alt="Canot show img" />
-        <img src="./images/mountains02.jpg" alt="Canot show img" />
+        <div class="info">
+          HIKING<br /><span>"A walk in nature walks the soul back home."</span>
+        </div>
       </div>
 
-     
+      <div>
+        <img src="./images/mount-fuji.jpg" alt="Canot show img" />
+        <div class="info">
+          SUNRISE<br /><span
+            >“There is no sunrise so beautiful that it is worth waking me up to
+            see it.”</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/mountains02.jpg" alt="Canot show img" />
+        <div class="info">
+          LANDSCAPE<br /><span
+            >"Study nature, love nature, stay close to nature."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/night.jpg" alt="Canot show img" />
+        <div class="info">
+          NIGHT VIEW<br /><span
+            >"The darker the night, the brighter the stars"</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/monastery.jpg"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          MONASTERY<br /><span
+            >"My imagination is a monastery and I am its monk."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/arctic.jpg" alt="Canot show img" />
+        <div class="info">
+          ARCTIC FOREST<br /><span
+            >"The clearest way into the Universe is through a forest
+            wilderness."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/golden.jpg" alt="Canot show img" />
+        <div class="info">
+          GOLDEN GATE BRIDGE<br /><span
+            >" We find ourselves to lose ourselves to the Golden Gate."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/dubai.jpg" alt="Canot show img" />
+        <div class="info">
+          BURJ KHALIFA<br /><span
+            >"Nothing tastes as sweet as a Dubai sunset. "</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/eleph.jpg" alt="Canot show img" />
+        <div class="info">
+          WILDLIFE<br /><span
+            >“If you truly love nature, you will find beauty everywhere.”
+          </span>
+        </div>
+      </div>
+      <div>
+        <img src="./images/desert.jpg" alt="Canot show img" />
+        <div class="info">
+          DESERT<br /><span
+            >"What makes the desert beautiful is that somewhere it hides a well.
+            "</span
+          >
+        </div>
+      </div>
+      <div>
+        <img src="./images/light.jpg" alt="Canot show img" />
+        <div class="info">
+          NORTHERN LIGHT<br /><span
+            >"Keep me where the Northern Lights are."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/beach.jpg"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          BEACH<br /><span
+            >"Life takes you down many paths, but the best ones lead to the
+            beach."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/operahouse.jpg"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          OPERA HOUSE<br /><span
+            >"Australia is about as far away as you can get. I like that."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/temple.jpg"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          TEMPLE<br /><span
+            >"The temple of our purest thoughts is silence"</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/para.webp"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          PARAGLIDING<br /><span
+            >"Experience the freedom and the pure joy of paragliding with the
+            ones you love. "</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/giza.jpg"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          PYRAMID OF GIZA<br /><span
+            >"“Only the sixth sense can expose what the other five have
+            hidden."</span
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/maninmount.jpg"
+          style="height: 320px"
+          alt="Canot show img"
+        />
+        <div class="info">
+          TREKKING<br /><span
+            >"The best view comes after the hardest climb."</span
+          >
+        </div>
+      </div>
     </section>
+    <script
+      src="https://kit.fontawesome.com/3d2f093b4a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

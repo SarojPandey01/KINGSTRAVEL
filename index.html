@@ -13,12 +13,13 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./ResponsiveHome.css" />
   </head>
   <body>
     <!-- Navbar -->
     <section class="navbar" id="navbar">
-      <div class="logo"><img src="./images/KING'S TRAVEL.png" alt="" /></div>
-      <div class="nav-bar">
+      <div class="logo"><a href="#landing-page"><img src="./images/KING_S_TRAVEL-removebg-preview.png" alt="logo" /></a></div>
+      <div class="nav-bar" id="mobileList">
         <ul class="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -29,10 +30,14 @@
       </div>
 
       <div class="searchBox">
-        <label for="searchBox"> <input type="text" id="searchBox" /></label
-        ><button id="searchButton" class="btn-hover">Search</button>
+        <label for="searchBox"> <input placeholder="Search Here..." type="text" id="searchBox" /></label
+        ><button id="searchButton" class="btn-hover"><i class="fas fa-search"></i></button>
       </div>
     </section>
+    <!-- /For hamburger button -->
+    <div class="hamburgerButton" id='hb' onclick="toggleMenu()">
+      <span class="line" id="line1"></span><span class="line" id="line2"></span><span class="line" id="line3"></span>
+    </div>
     <!-- For front page Image Slider -->
     <section id="landing-page">
       <span class="btn" onClick="IncreaseIndex()" id="b1">&rarr;</span>
@@ -84,6 +89,7 @@
         <div class="heading">
           <h1>
             King's Travel
+
           </h1>
         </div>
         <div class="description">
