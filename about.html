@@ -14,12 +14,82 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./ResponsiveHome.css" />
+    <style>
+
+      h1.heading{
+        margin-top: 100px;
+        font-family: var(--mainfont);
+      }
+      section#about{
+        width:85%;
+        margin: auto;
+
+      }
+      section p{
+        font-family: var(--mainfont);
+        font-size:1.5rem;
+        padding:12px;
+        margin:10px;
+      }
+      i.abcd{
+        transform:scale(4);
+        height: 100px;
+        position:fixed;
+        bottom: 130px;
+        right:60px;
+        /* color:purple */
+
+      }
+      
+      section.contactPage{
+background-color: aqua;   
+     opacity: 0; 
+position:fixed;
+right: 60px;
+height: 250px;
+border-radius: 5px;
+width: fit-content;
+font-size: 2rem;
+top:58%;
+
+}
+  section.contactPage h2{
+font-size: 2rem;
+margin:10px 0;
+
+  }
+  @media screen and (max-width:420px) {
+     section.contactPage{
+       right: 0;
+     }
+    
+  }
+   
+    </style>
+    <script>
+// let msg=document.getElementById('msg');
+// msg.addEventListener(click,showContact);
+let showc=true;
+function showContact(){
+  let card=document.getElementById('contact');
+  if(showc){
+    card.style.opacity="1";
+  }
+
+  else{
+card.style.opacity="0"
+  }
+  showc=!showc;
+}
+
+
+    </script>
   </head>
   <body>
     <!-- Navbar -->
     <section class="navbar" id="navbar">
       <div class="logo">
-        <a href="#landing-page"
+        <a href="./index.html"
           ><img src="./images/KING_S_TRAVEL-removebg-preview.png" alt="logo"
         /></a>
       </div>
@@ -58,6 +128,38 @@
       ><span class="line" id="line3"></span>
     </div>
 
+<h1 class="heading">ABOUT US</h1>
+    <section id="about" class="about">
+<p>
+We cordially welcome to Welcome Nepal Treks and Tours Pvt. Ltd. We would like to introduce as one of the leading Travel, Tour Trekking companies in Nepal. We are approved by the Government of Nepal, the Ministry of Culture, Tourism and Civil Aviation, and are an active member of TAAN (Trekking Agents Association of Nepal), NMA (Nepal Mountaineering Association), KEEP (Katmandu Environment Education Project) and NTB (Nepal Tourism Board).
+</p>
+<p>
+Welcome Nepal Treks and Tours is dedicated to provide excellent and personalized service. We carefully plan together with you and supply you with all information necessary for your safety, comfort, and enjoyment. Our goal is to fulfill your dreams!
+</p>
+<p>
+Welcome Nepal Treks and Tours was established by a group of dedicated, young and experienced trekking mountaineering / Expeditions trekking guides and tour leaders. We are specialized in Adventure Trekking, Tours, Mountaineering, Jungle Safari, River Rafting and mountain biking, hotel reservations in Nepal. But we also offer exciting and exhilarating Nepal tours to different destinations like Tibet , Bhutan , Pakistan , and Sikkim ( India ). Our goal is to provide a life time experience for our customer. Let us make your time in Nepal an experience you will never forget.
+</p>
+<p>
+We will guide you to explore the beauty of Nepal from the top of world’s highest mountain till the lowlands of Terai.We run eco-friendly, trekking, hiking, climbing, jungle safari, mountaineering, scenic & cultural tours, historical tours, wilderness expeditions, overland adventures, special interest tours, helicopter rescue, family adventures or group holidays in Nepal and Tibet. We are always a head for your safety and pleasure, and more conscious to make your holiday is memorable and enjoyable in the best way possible.
+</p>
+<p>
+If your interest is in Trekking in the Himalayas, White water rafting, cultural & sightseeing Nepal tour, Adventure packages, wildlife safaris or just only airfares, hotel booking or car rentals come and visit us; our knowledgeable travel executives always strive to make your holiday great success!!!!
+</p>
+    </section>
+     <i class="fab fa-facebook-messenger abcd" onclick="showContact()"></i>
+    <section class="contactPage" id="contact"> 
+      <h3>Contact Us</h3>
+      
+      <div class="cc">
+        <h2>+977-9849388764</h2>
+        <h2>kingstravel@gamil.com</h2>
+        
+      </div>
+      
+      
+    </section>
+ 
+
     <!-- FOOTER STARTS -->
 
     <footer>
@@ -65,16 +167,10 @@
         <img src="./images/footerimg.png" alt="" />
       </div>
       <div class="contactFooter">
-        <div><u>Call Us</u><br />+977-9849388764</div>
-        <div>
-          <u>Email for us</u><br />
-          kingstravel@gmail.com
-        </div>
-        <div>
-          <u>Follow us</u><br /><i class="fab fa-facebook"></i
-          ><i class="fab fa-instagram"></i> <i class="fab fa-youtube"></i
-          ><i class="fab fa-twitter"></i>
-        </div>
+        <div><u>Call Us</u><br>+977-9849388764</div>
+        <div><u>Email for us</u><br> kingstravel@gmail.com</div>
+        <div><u>Follow us</u><br><a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube"></i></a><a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a></div>
+      </div>
       </div>
       <div class="copyright">
         <p>&copy; All copyright reserved 2022.</p>
