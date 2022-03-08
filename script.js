@@ -59,3 +59,4 @@ function toggleMenu() {
   }
   show = !show;
 }
+// window.navigator.geolocation.getCurrentPosition(console.log);

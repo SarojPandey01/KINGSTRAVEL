@@ -87,13 +87,22 @@ div.hamburgerButton span.line {
   display: none;
   background-color: black;
 }
+ul.list li {
+  border-radius: 22px;
+}
+ul.list li {
+  border-radius: 22px;
+}
 /* navbar items style on hover state */
 ul.list li:hover {
-  background-color: rgb(76, 231, 37);
+  background-color: rgb(0, 0, 0) !important;
+  border-radius: 22px;
+  transition: 100ms;
   transform: scale(1.1);
-  animation: change 1s infinite;
 }
-
+ul.list li:hover a {
+  color: wheat !important;
+}
 /* Search box */
 
 #searchBox {
