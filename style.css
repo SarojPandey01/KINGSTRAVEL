@@ -63,10 +63,17 @@ ul.list li {
 ul.list li a {
   color: black;
   text-decoration: none;
+  /* padding: 20px; */
   margin: 2px 20px;
+  /* margin-left: -50px; */
   font-family: var(--mainfont);
   font-size: 20px;
   font-weight: bold;
+}
+.navbar ul li{
+  margin-left:-20px ;
+  padding: 10px;;
+
 }
 /* FOR HAMBURGER BUTTON */
 div.hamburgerButton {
